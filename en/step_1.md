@@ -1,4 +1,4 @@
-## Triggering Function Calls with Buttons
+### Triggering Function Calls with Buttons
 
 In the scenario below, a single button has been wired to pin 17.
 
