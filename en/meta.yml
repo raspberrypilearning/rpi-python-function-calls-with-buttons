@@ -7,6 +7,6 @@ duration: 1
 listed: false
 ingredient: true
 interests:
-technologies: "[python]"
+technologies: "python"
 steps:
   - title: Triggering function calls with buttons
