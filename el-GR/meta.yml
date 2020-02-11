@@ -1,7 +1,7 @@
 ---
-title: Triggering functions with buttons
+title: Συναρτήσεις ενεργοποίησης με κουμπιά
 hero_image: images/banner.png
-description: How to trigger function calls with buttons
+description: Πώς να ενεργοποιήσεις τις κλήσεις λειτουργίας με κουμπιά
 original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
 theme: cc-prototype
 duration: 1
@@ -12,4 +12,4 @@ interests:
 technologies: "python"
 steps:
   - 
-    title: Triggering function calls with buttons
+    title: Κλήσεις λειτουργίας με χρήση κουμπιών
