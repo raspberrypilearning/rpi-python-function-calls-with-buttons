@@ -1,32 +1,32 @@
-- In the diagram below, a single button has been wired to pin 17.
+- Στο παρακάτω διάγραμμα, έχει συνδεθεί ένα μονό κουμπί στο pin 17.
 
 ![4-pin-btn](images/4-pin-btn.png)
 
-- You can use the button to call functions that take no arguments:
+- Μπορείς να χρησιμοποιήσεις το κουμπί για να καλέσεις συναρτήσεις χωρίς ορισμούς:
 
-- First you need to set up the button using Python 3 and the `gpiozero` module.
+- Πρώτα πρέπει να προετοιμάσεις το κουμπί χρησιμοποιώντας την Python 3 και το module `gpiozero`.
 
     ```python
     from gpiozero import Button
     btn = Button(17)
     ```
 
-- Next you need to create a function that has no arguments. This simple function will just print the word `Hello` to the shell.
+- Στη συνέχεια, πρέπει να δημιουργήσεις μια συνάρτηση χωρίς ορισμούς. Αυτή η απλή συνάρτηση θα εμφανίσει απλώς τη λέξη `Γεια` στο περιβάλλον της python.
 
     ```python
     def hello():
-        print('Hello')
+        print('Γεια')
     ```
 
-- Finally, create a trigger that calls the function.
+- Τέλος, δημιούργησε τον παρακάτω κώδικα με τον οποίο καλείται η συνάρτηση.
 
    ```python
    btn.when_pressed = hello
    ```
 
-- Now each time the button is pressed, you should see `Hello` being printed to the Python shell.
+- Τώρα κάθε φορά που πατάς το κουμπί, θα βλέπεις να εμφανίζεται το `Γεια` στο περιβάλλον της Python.
 
-- Your function can be as complex as you like - you can even call functions that are parts of modules. In this example, pressing the button switches on an LED on pin 4.
+- Η συνάρτησή σου μπορεί να είναι όσο περίπλοκη θέλεις - μπορείς ακόμη και να καλέσεις συναρτήσεις που ανήκουν σε modules. Σε αυτό το παράδειγμα, πατώντας το κουμπί ενεργοποιείται μια λυχνία LED στον ακροδέκτη 4.
 
     ```python
     from gpiozero import Button, LED
